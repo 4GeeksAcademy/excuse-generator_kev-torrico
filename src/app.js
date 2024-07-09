@@ -31,8 +31,12 @@ window.onload = function() {
     "when I took a shower"
   ];
 
-  console.log(
-    aleatorio(who) + aleatorio(action) + aleatorio(what) + aleatorio(when)
-  );
-  // who + acion + what + when
+  let excuse =
+    aleatorio(who) + aleatorio(action) + aleatorio(what) + aleatorio(when);
+
+  console.log(excuse);
+
+  let elementExcuse = window.document.querySelector("#excuse");
+
+  elementExcuse.innerHTML = excuse;
 };
