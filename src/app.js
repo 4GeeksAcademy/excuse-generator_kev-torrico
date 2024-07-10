@@ -39,4 +39,12 @@ window.onload = function() {
   let elementExcuse = window.document.querySelector("#excuse");
 
   elementExcuse.innerHTML = excuse;
+
+  let excuseButton = document.querySelector("#generate-excuse");
+
+  excuseButton.addEventListener("click", () => {
+    let newExcuse =
+      aleatorio(who) + aleatorio(action) + aleatorio(what) + aleatorio(when);
+    elementExcuse.innerHTML = newExcuse;
+  });
 };
