@@ -6,11 +6,6 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  function aleatorio(lista) {
-    let numeroAleatorio = Math.floor(Math.random() * lista.length);
-    return lista[numeroAleatorio] + " ";
-  }
-
   let who = [
     "The dog",
     "My grandma",
@@ -30,6 +25,10 @@ window.onload = function() {
     "when I was in the school",
     "when I took a shower"
   ];
+  function aleatorio(lista) {
+    let numeroAleatorio = Math.floor(Math.random() * lista.length);
+    return lista[numeroAleatorio] + " ";
+  }
 
   let excuse =
     aleatorio(who) + aleatorio(action) + aleatorio(what) + aleatorio(when);
